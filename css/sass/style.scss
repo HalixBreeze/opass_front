@@ -1,0 +1,40 @@
+@import "submit";
+
+body {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+.hover:hover {
+  cursor: pointer; font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    font-size: 1.4rem; letter-spacing: 2px;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{ 
+    font-size: 2rem;
+  }
+}
