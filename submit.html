@@ -22,37 +22,37 @@
                             <p><h5>基本資料</h5></p>
 
                             <div id="form-course" class="input-field">
-                                <input id="course" type="text" class="validate" placeholder="請填寫課程名稱">
+                                <input id="course" type="text" name="course" class="validate" placeholder="請填寫課程名稱">
                                 <label for="course">課程名稱</label>
                             </div>
                                 
                             <div id="form-teacher" class="input-field">
-                                <input id="teacher" type="text" class="validate" placeholder="請填寫老師姓名">
+                                <input id="teacher" type="text" name="teacher" class="validate" placeholder="請填寫老師姓名">
                                 <label for="teacher">任課老師</label>    
                             </div>
                                 
                             <p id="p-multi-teacher">
-                                <input id="is-multi-teacher" type="checkbox" class="fill-in" value="true">
-                                <label for="is-multi-teacher">多位教師</label>
+                                <input id="multi-teacher" type="checkbox" name="multi-teacher" class="fill-in" value="true">
+                                <label for="multi-teacher">多位教師
                             </p>
                             
 
                             <div id="form-division" class="input-field">
-                                <select>
-                                    <option disabled selected value="">請選擇開課部別</option>
-                                    <option value="1">日間部</option>
-                                    <option value="2">夜間部</option>
-                                    <option value="3">進修部</option>
+                                <select name="division">
+                                    <option value="" disabled selected>請選擇開課部別</option>
+                                    <option value="日間部">日間部</option>
+                                    <option value="夜間部">夜間部</option>
+                                    <option value="進修部">進修部</option>
                                 </select>
                                 <label>開課部別</label>
                             </div>
                             
                             <div id="form-department" class="input-field">
-                                <select>
-                                    <option disabled selected value="">請選擇開課系所</option>
-                                    <option>中文系</option>
-                                    <option>外文系</option>
-                                    <option>資工系</option>
+                                <select name="department">
+                                    <option value="" disabled selected>請選擇開課系所</option>
+                                    <option value="中文系">中文系</option>
+                                    <option value="外文系">外文系</option>
+                                    <option value="資工系">資工系</option>
                                 </select>
                                 <label>開課系所</label>
                             </div>
@@ -60,15 +60,15 @@
                             <div id="form-must-or-choice">
                                 <label>類別</label>
                                 <p>
-                                    <input id="must" type="radio" name="group1">
+                                    <input id="must" type="radio" name="must-or-choice" value="must">
                                     <label for="must">必修</label>
                                 </p>
                                 <p>
-                                    <input id="choice" type="radio" name="group1">
+                                    <input id="choice" type="radio" name="must-or-choice" value="choice">
                                     <label for="choice">選修</label>
                                 </p>
                                 <p>
-                                    <input id="must-choice" type="radio" name="group1">
+                                    <input id="must-choice" type="radio" name="must-or-choice" value="must_choice">
                                     <label for="must-choice">必選修</label>
                                 </p>
                             </div>
@@ -76,8 +76,8 @@
                             <div id="form-other">
                                 <label>其他</label>
                                 <p id="p-other-is-multi-teacher">
-                                    <input id="other-is-multi-teacher" type="checkbox" class="fill-in">
-                                    <label for="other-is-multi-teacher">多位教師</label>
+                                    <input id="other-multi-teacher" type="checkbox" name="other-multi-teacher" class="fill-in" value="true">
+                                    <label for="other-multi-teacher">多位教師</label>
                                 </p>
                             </div>
                         </form>
